@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:8787:8787'
+    env_file:
+      - .env
+      - .env.minimax
+    environment:
+      NODE_ENV: production
+      ENABLE_DEMO: 'false'
+      TRUST_PROXY: '1'
+    volumes:
+      - shiguang-data:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '3'
+volumes:
+  shiguang-data:

@@ -1,0 +1,27 @@
+services:
+  app:
+    image: shiguang:studio-20260915
+    container_name: shiguang-app
+    restart: unless-stopped
+    init: true
+    ports:
+      - "127.0.0.1:8787:8787"
+    env_file:
+      - /opt/shiguang/shared/production.env
+    environment:
+      NODE_ENV: production
+      ENABLE_DEMO: "false"
+      TRUST_PROXY: "1"
+    volumes:
+      - /opt/shiguang/shared/data:/app/data
+    mem_limit: 512m
+    cpus: 1.0
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

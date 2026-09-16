@@ -1,0 +1,179 @@
+/* The compact phone workspace prioritizes the next action over decoration. */
+.practice-edit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+.practice-edit-fields textarea {
+  font-size: 14px;
+}
+@media (max-width: 760px) {
+  .topbar-user > .avatar {
+    display: flex;
+  }
+  .greeting {
+    margin-bottom: 17px;
+  }
+  .greeting-date {
+    color: #65738b;
+  }
+  .greeting p {
+    color: #65738b;
+  }
+  .work-hero {
+    min-height: 151px;
+    padding: 17px 19px;
+  }
+  .work-hero h2 {
+    font-size: 18px;
+    margin: 11px 0 7px;
+  }
+  .work-hero .mini-label {
+    font-size: 10px;
+  }
+  .work-hero p {
+    font-size: 10px;
+    color: #65738b;
+  }
+  .hero-art {
+    top: 14px;
+    transform: scale(0.57) rotate(3deg);
+    opacity: 0.7;
+  }
+  .hero-link {
+    font-size: 10px;
+    color: #65738b;
+    margin-top: 12px;
+  }
+  .segmented-progress {
+    margin-top: 13px;
+  }
+  .stat-grid {
+    margin-bottom: 18px;
+  }
+  .stat-item {
+    padding: 14px 10px;
+  }
+  .stat-item > div > span {
+    font-size: 10px;
+    color: #65738b;
+  }
+  .stat-item small {
+    color: #65738b;
+  }
+  .panel-title {
+    padding: 18px 16px 13px;
+  }
+  .panel-title p {
+    display: none;
+  }
+  .filter-tabs button {
+    font-size: 11px;
+    min-height: 36px;
+  }
+  .class-select select {
+    font-size: 10px;
+  }
+  .student-search input {
+    font-size: 13px;
+  }
+  .student-identity strong {
+    font-size: 14px;
+  }
+  .student-identity div > span {
+    font-size: 10px;
+    color: #65738b;
+  }
+  .student-row > .status {
+    font-size: 10px;
+  }
+  .student-subjects .subject {
+    font-size: 10px;
+  }
+  .student-subjects small {
+    font-size: 10px;
+    color: #65738b;
+  }
+  .small-button {
+    min-height: 38px;
+    font-size: 11px;
+  }
+  .student-row .small-button.quiet {
+    min-height: 36px;
+    color: #65738b;
+  }
+  .question-utilities button {
+    min-height: 42px;
+    color: #65738b;
+  }
+  .question-label {
+    font-size: 11px;
+  }
+  .explanation p {
+    color: #65738b;
+  }
+  .answer-comparison span {
+    color: #65738b;
+  }
+  .report-page-actions {
+    margin-top: 17px;
+  }
+  .report-page-actions > .button {
+    font-size: 11px;
+  }
+  .report-page-actions .week-picker input {
+    font-size: 11px;
+  }
+  .report-summary,
+  .teacher-note p {
+    font-size: 13px;
+    color: #65738b;
+  }
+  .report-metrics span {
+    font-size: 10px;
+    color: #65738b;
+  }
+  .report-cover p,
+  .report-brand > span {
+    color: #65738b;
+  }
+  .report-document .muted-label {
+    font-size: 11px;
+    color: #65738b;
+  }
+  .knowledge-tags > span {
+    color: #65738b;
+  }
+  .knowledge-tags b {
+    color: #65738b;
+  }
+  .report-controls .fine-print {
+    color: #65738b;
+  }
+  .page-description,
+  .collection-count {
+    color: #65738b;
+  }
+  .exercise-level {
+    color: #65738b;
+  }
+  .exercise-answer {
+    color: #65738b;
+  }
+}
+@media (max-width: 380px) {
+  .stat-item > div > span {
+    font-size: 9px;
+  }
+  .stat-item {
+    gap: 5px;
+  }
+  .work-hero h2 {
+    font-size: 16px;
+  }
+  .report-page-actions .button {
+    font-size: 10px;
+    padding: 10px 12px;
+  }
+}

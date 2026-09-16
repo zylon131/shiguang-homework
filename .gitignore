@@ -1,0 +1,10 @@
+node_modules/
+dist/
+data/
+.env*
+!.env.example
+test-results/
+*.log
+deploy/*.local.txt
+*.tsbuildinfo
+deploy/*.tar.gz

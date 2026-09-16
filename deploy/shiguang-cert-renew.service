@@ -1,0 +1,7 @@
+[Unit]
+Description=Renew the Shiguang HTTPS IP certificate
+After=network-online.target nginx.service
+Wants=network-online.target
+[Service]
+Type=oneshot
+ExecStart=/opt/shiguang-tools/certbot/bin/certbot renew --cert-name shiguang-ip --quiet --deploy-hook "/usr/sbin/nginx -t && /bin/systemctl reload nginx"
